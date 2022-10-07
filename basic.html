@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        
+        <title>Page Title</title>
+<!--        bringing in all the required styles and scripts-->
+        <link rel="stylesheet" href="style/all.css">
+        <script src="js/all.js"></script>
+        <link rel="stylesheet" href="style/style.css">
+    
+    </head>
+    
+    <body>
+        
+<!--    the nav menu-->
+    
+        <nav class="nav-bar">
+            
+<!--            bringing in the logo-->
+        
+            <div class="logo">
+                <img src="style/images/transparent%20ecommerce-logo.png">
+            </div>
+            
+            <div class="links">
+            
+                <ul class="link-items">
+                
+                    <li class="link-item-content"><a href="logout.php"><i class="icon fas fa-user-times"></i> Logout</a></li>
+                
+                </ul>
+                
+            </div>
+            
+        </nav>
+<!--        the nav menu ends here-->
+        
+<!--        the main content starts here-->
+        
+        <section class="main-content">
+        
+<!--            the side bar starts here-->
+            
+            <div class="main-content-side-bar">
+            
+                <div class="main-content-side-bar-container">
+                
+                    <div class="main-content-side-bar-container-links"  title="Dashboard">
+                    
+                        <a href="dashboard.php"><i class="fas fa-home"></i></a>
+                        
+                    </div>
+                    
+                    
+                    <div class="main-content-side-bar-container-links"  title="Categories">
+                    
+                        <i class="fas fa-folder"></i>
+                        
+                        <div class="side-bar-link-hover">
+                        
+                            <ul>
+                            
+                                <li><a href="categories.php?title=addnewcategory"><i class="fas fa-folder-plus"></i> &nbsp;Manage Categories</a></li>
+                                <li><a href="categories.php?title=addnewcategory">Add New Category</a></li>
+                                <li><a href="categories.php?title=addnewcategory">Add New Category</a></li>
+                                
+                            </ul>
+                        
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="main-content-side-bar-container-links"  title="Sub-Categories">
+                    
+                        <i class="fas fa-folder-open"></i>
+                        
+                        <div class="side-bar-link-hover">
+                        
+                            <ul>
+                            
+                                <li><a href="sub_categories.php?title=addnewcategory"><i class="fas fa-folder-plus"></i> &nbsp;Manage Sub-Categories</a></li>
+                                <li><a href="sub_categories.php?title=addnewcategory">Add New Sub-Category</a></li>
+                                <li><a href="sub_categories.php?title=addnewcategory">Add New Sub-Category</a></li>
+                                
+                            </ul>
+                        
+                        </div>
+                        
+                    </div>
+                    
+                    
+                    <div class="main-content-side-bar-container-links"  title="Admins">
+                    
+                        <a href="<?php checkposition(); ?>"><i class="fas fa-users"></i></a>
+                        
+                    </div>
+                    
+                    <div class="main-content-side-bar-container-links"  title="Products">
+                    
+                        <a href="products.php"><i class="fas fa-dolly"></i></a>
+                        
+                    </div>
+                    
+                    
+                    <div class="main-content-side-bar-container-links"  title="Account">
+                    
+                        <i class="fas fa-cog"></i>
+                        
+                        <div class="side-bar-link-hover">
+                        
+                            <ul>
+                            
+                                <li><a href="adminProfile.php?id=<?php echo $adminid; ?>&username=<?php echo $adminusername; ?>"><i class="fas fa-user-circle"></i> &nbsp;View Profile</a></li>
+                                <li><a href="adminSettings.php?id=<?php echo $adminid; ?>&username=<?php echo $adminusername; ?>"><i class="fas fa-user-cog"></i> &nbsp;Account Settings</a></li>
+                                <li><a href="locations.php"><i class="fas fa-map-marker-alt"></i> &nbsp;Location</a></li>
+                            <li><a href="logout.php"><i class="fas fa-user-times"></i> &nbsp;Logout</a></li>
+                                
+                            </ul>
+                        
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                
+            </div>
+<!--            the side bar ends here-->
+            
+<!--            the main content right side starts here-->
+            
+            <div class="main-right-side">
+            
+            </div>
+<!--            the main content right side ends here-->
+            
+        </section>
+        
+<!--        the main content ends here-->
+        
+<!--        the footer starts here-->
+        
+        <div class="footer">
+        
+            <div class="footer-text">
+            
+                <p>Copyrights &copy; <?php echo date('Y'); ?> MEMS CART </p>
+            
+            </div>
+            
+        </div>
+        
+<!--        the footer ends here-->
+        <script src="js/script.js"></script>
+       
+    </body>
+
+</html>
